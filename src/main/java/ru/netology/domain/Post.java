@@ -13,7 +13,24 @@ public class Post {
     private RepostsInfo repostsInfo;
     private ViewsInfo viewsInfo;
     private String author;
+    private int ownerId;
+    private boolean friendsOnly;
 
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public boolean isFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
 
     public int getId() {
         return id;

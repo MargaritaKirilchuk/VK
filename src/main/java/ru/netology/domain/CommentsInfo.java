@@ -3,6 +3,35 @@ package ru.netology.domain;
 public class CommentsInfo {
     private int count;
     private boolean canPost;
+    private boolean groupCanPost;
+
+    public boolean isGroupCanPost() {
+        return groupCanPost;
+    }
+
+    public void setGroupCanPost(boolean groupCanPost) {
+        this.groupCanPost = groupCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
+
+    private boolean canClose;
+    private boolean canOpen;
+
 
     public int getCount() {
         return count;
